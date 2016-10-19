@@ -1,4 +1,5 @@
 @import 'https://fonts.googleapis.com/css?family=Lato:400,700|Karla:400';
+@import url(lightslider.min.css);
 html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
