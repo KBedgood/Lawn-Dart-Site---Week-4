@@ -83,3 +83,20 @@ p {
 .productContainer .productImageContainer img {
   max-height: 50px;
   padding-top: 10px; }
+
+.map {
+  margin-top: 60px;
+  text-align: center;
+  color: #223FA1; }
+
+.sectionHeader {
+  font-size: 42px;
+  font-weight: 700px; }
+
+.map h3 {
+  margin-top: 0; }
+
+#googleMap {
+  height: 250px;
+  margin: 35px auto 0;
+  width: 100%; }
