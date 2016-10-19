@@ -14,8 +14,8 @@ $.ajax({
   success: function(data) {
     console.log(data);
   }
-});
 
+    });    
 
 //Product Info
 $.ajax({
@@ -28,4 +28,21 @@ $.ajax({
   }
 });
 
+
+
+// Google Map
+
+
 });
+
+
+var googleMap = document.getElementById("googleMap");
+
+      function initMap() {
+        googleMap = new google.maps.Map(googleMap, {
+          center: {lat: 30.0218667, lng: -90.0225584},
+          zoom: 8
+        });
+      }
+
+      window.initMap = initMap;
