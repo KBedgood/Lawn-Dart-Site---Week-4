@@ -1,5 +1,10 @@
 $(document).ready(function() {
 
+
+    //Defining person id
+    $person1 = $("#person1");
+    $person2 = $("#person2");
+    $person3 = $("#person3");
     // Random User Generator API
     // How to use
     // You can use AJAX to call the Random User Generator API and will receive a randomly 
@@ -8,29 +13,15 @@ $(document).ready(function() {
     // Format parameters examples...
     // GENDER --> http://api.randomuser.me/?gender=female
     // MULTIPLE USERS --> http://api.randomuser.me/?results=5000
-    $.ajax({
-        url: 'https://randomuser.me/api/',
-        dataType: 'json',
-        success: function(users) {
-            console.log(users);
-        }
-    });
-// Random User Generator API
-// How to use
-// You can use AJAX to call the Random User Generator API and will receive a randomly 
-// generated user in return. If you are using jQuery, you can use the $.ajax() function in the 
-// code snippet below to get started.
-// Format parameters examples...
-// GENDER --> http://api.randomuser.me/?gender=female
-// MULTIPLE USERS --> http://api.randomuser.me/?results=5000
-$.ajax({
-  url: 'https://randomuser.me/api/',
-  dataType: 'json',
-  success: function(data) {
-    console.log(data);
-  }
 
-    });    
+    // $.ajax({
+    //     url: 'https://randomuser.me/api/',
+    //     dataType: 'json',
+    //     success: function(users) {
+
+    //     }
+    // });
+
 
     //Testamonials 
     $.ajax({
@@ -38,6 +29,24 @@ $.ajax({
         dataType: 'json',
         success: function(testimonials) {
             console.log(testimonials);
+            $person1.append(`
+           		<div class="userName col-md-4">
+           		<h3>${testimonials.results["0"].name}</h3>
+           		<p>${testimonials.results["0"].review}</p>
+				</div>
+           		`)
+            $person2.append(`
+           		<div class="userName col-md-4">
+           		<h3>${testimonials.results["1"].name}</h3>
+           		<p>${testimonials.results["1"].review}</p>
+				</div>
+           		`)
+            $person3.append(`
+           		<div class="userName col-md-4">
+           		<h3>${testimonials.results["2"].name}</h3>
+           		<p>${testimonials.results["2"].review}</p>
+				</div>
+           		`)
         }
     });
 
@@ -56,25 +65,25 @@ $.ajax({
     });
 
 
-    
-    
 
 
 
 
-// Google Map
+
+
 
 
 });
 
+// Google Map
 
 var googleMap = document.getElementById("googleMap");
 
-      function initMap() {
-        googleMap = new google.maps.Map(googleMap, {
-          center: {lat: 30.0218667, lng: -90.0225584},
-          zoom: 8
-        });
-      }
+function initMap() {
+    googleMap = new google.maps.Map(googleMap, {
+        center: { lat: 30.0218667, lng: -90.0225584 },
+        zoom: 8
+    });
+}
 
-      window.initMap = initMap;
+window.initMap = initMap;
