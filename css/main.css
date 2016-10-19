@@ -62,9 +62,8 @@ p {
     float: left; }
 
 .navbar {
-  background: rgba(255, 255, 255, 0.87);
-  border: none; }
-  .navbar .navbar-toggle {
+  background: rgba(255, 255, 255, 0.87); }
+  .navbar border:none .navbar-toggle {
     color: black; }
 
 .heroImage {
@@ -76,3 +75,10 @@ p {
     color: white;
     text-align: left;
     text-transform: uppercase; }
+
+.productContainer img {
+  max-height: 300px; }
+
+.productContainer .productImageContainer img {
+  max-height: 50px;
+  padding-top: 10px; }

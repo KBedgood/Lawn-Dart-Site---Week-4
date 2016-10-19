@@ -8,12 +8,23 @@ $(document).ready(function() {
 // Format parameters examples...
 // GENDER --> http://api.randomuser.me/?gender=female
 // MULTIPLE USERS --> http://api.randomuser.me/?results=5000
-
 $.ajax({
   url: 'https://randomuser.me/api/',
   dataType: 'json',
   success: function(data) {
     console.log(data);
+  }
+});
+
+
+//Product Info
+$.ajax({
+  url: 'https://json-data.herokuapp.com/darts/info',
+  dataType: 'json',
+  success: function(productInfo) {
+    console.log(productInfo);
+    $productCard = $("#productCard");
+    $productCard.append(`<h3> ${productInfo.data.product.title} </h3>`)
   }
 });
 

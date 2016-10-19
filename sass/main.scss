@@ -1,4 +1,4 @@
-    @import "_typography.scss";
+@import "_typography.scss";
 //Colors
 $darkBlue: #0B2647;
 $lightBlue: #223FA1;
@@ -17,21 +17,33 @@ $darkRed: #602618;
         float: left;
     }
 }
-    .navbar {
-        background: rgba(255, 255, 255, 0.87);
-        border:none;
-        .navbar-toggle {
-            color: black;
-        }
+
+.navbar {
+    background: rgba(255, 255, 255, 0.87);
+    border:none .navbar-toggle {
+        color: black;
     }
-    .heroImage {
-        height: 450px;
-        width: 100%;
-        background: url('/img/heroImage.jpg') no-repeat center;
-        background-size: cover;
-        .slogan h1 {
-            color: white;
-            text-align: left;
-            text-transform: uppercase;
-        }
+}
+
+.heroImage {
+    height: 450px;
+    width: 100%;
+    background: url('/img/heroImage.jpg') no-repeat center;
+    background-size: cover;
+    .slogan h1 {
+        color: white;
+        text-align: left;
+        text-transform: uppercase;
     }
+}
+
+//Product Container
+.productContainer {
+    img {
+        max-height: 300px;
+    }
+    .productImageContainer img {
+    	max-height: 50px;
+    	padding-top: 10px;
+    }
+}
