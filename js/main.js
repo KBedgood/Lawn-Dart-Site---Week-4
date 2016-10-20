@@ -1,12 +1,9 @@
 $(document).ready(function() {
 
-    //Defining person id
-
+    //Defining person 
     $profilePicture = $(".profilePicture");
     $profileText = $(".profileText");
     $companyContainer = $(".companyContainer");
-
-
 
     // Random User Generator API
     $.ajax({
@@ -24,7 +21,7 @@ $(document).ready(function() {
         }
     });
 
-    //Testamonials 
+    //Testimonials 
     $.ajax({
         url: 'https://json-data.herokuapp.com/darts/testimonials',
         dataType: 'json',
