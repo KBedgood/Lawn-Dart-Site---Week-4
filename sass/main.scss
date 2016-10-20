@@ -58,7 +58,12 @@ nav {
 
 //Testamonials
 .companyTestimonals {
-            padding: 0 30px 0 30px;
+
+    padding: 0 30px 0 30px;
+    margin-top:0px; 
+    img {
+      max-width: 100px;
+    }
 }
 
 //SECTION : Map

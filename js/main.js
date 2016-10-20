@@ -1,13 +1,13 @@
 $(document).ready(function() {
 
-    //Defining person id
-  
+    //Defining person 
     $profilePicture = $(".profilePicture");
     $profileText = $(".profileText");
 
 
  $('.carousel').carousel()
 
+    $companyContainer = $(".companyContainer");
 
     // Random User Generator API
     $.ajax({
@@ -25,7 +25,7 @@ $(document).ready(function() {
         }
     });
 
-    //Testamonials 
+    //Testimonials 
     $.ajax({
         url: 'https://json-data.herokuapp.com/darts/testimonials',
         dataType: 'json',
@@ -58,8 +58,24 @@ $(document).ready(function() {
 
 });
 
-// Google Map
 
+$.ajax({
+    url: 'https://json-data.herokuapp.com/darts/companies',
+    dataType: 'json',
+    success: function(companies) {
+        companies.results.forEach(function(company) {
+            console.log(company);
+            $companyContainer.append(`
+              <div class="col-md-3">
+              <img src='${company.image_url}'>
+              </div>
+              `)
+        })
+    }
+});
+
+
+// Google Map
 var googleMap = document.getElementById("googleMap");
 
 function initMap() {

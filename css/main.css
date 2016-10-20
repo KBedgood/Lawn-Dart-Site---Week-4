@@ -196,7 +196,10 @@ nav {
     border-radius: 50%; }
 
 .companyTestimonals {
-  padding: 0 30px 0 30px; }
+  padding: 0 30px 0 30px;
+  margin-top: 0px; }
+  .companyTestimonals img {
+    max-width: 100px; }
 
 .map {
   margin-top: 60px;
