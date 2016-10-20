@@ -104,9 +104,6 @@ p {
   word-spacing: -0.10px;
   text-transform: none; }
 
-.content {
-  background-color: #223FA1; }
-
 nav {
   top: 0;
   vertical-align: top;
@@ -182,30 +179,16 @@ nav {
     margin-top: 33px;
     margin-bottom: 33px; }
 
-.heroImage {
-  height: 450px;
-  width: 100%;
-  background: url("/img/heroImage.jpg") no-repeat center;
-  background-size: cover; }
-  .heroImage .slogan h1 {
-    color: white;
-    text-align: left;
-    text-transform: uppercase; }
+nav {
+  background-color: #DCDCDC; }
 
-.productContainer {
-  text-align: left;
-  margin-bottom: 30px; }
-  .productContainer img {
-    max-height: 300px; }
-  .productContainer .productImageContainer img {
-    max-height: 50px;
-    padding-top: 10px; }
-  .productContainer h2 {
-    margin-top: 0px; }
+.carousel {
+  width: 500px; }
 
 .productUsers {
   background-color: #223FA1;
-  padding: 40px 40px 40px 40px; }
+  padding: 40px 40px 40px 40px;
+  float: left; }
   .productUsers p,
   .productUsers h3 {
     color: white; }

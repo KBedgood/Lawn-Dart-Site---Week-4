@@ -6,6 +6,8 @@ $(document).ready(function() {
     $profileText = $(".profileText");
 
 
+ $('.carousel').carousel()
+
 
     // Random User Generator API
     $.ajax({
