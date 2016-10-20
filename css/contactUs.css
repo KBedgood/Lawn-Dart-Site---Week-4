@@ -89,6 +89,13 @@ nav {
           text-decoration: none;
           color: white;
           background-color: #A0261A; }
+  nav .dartCart {
+    float: right; }
+    nav .dartCart img {
+      height: 60px;
+      margin-top: 15px;
+      margin-left: 0;
+      padding-left: 23px; }
 
 .container {
   margin-top: 90px;
@@ -117,3 +124,7 @@ nav {
       color: black;
       margin-bottom: 30px;
       width: 100%; }
+  .container footer {
+    color: white;
+    margin-top: 33px;
+    margin-bottom: 33px; }
