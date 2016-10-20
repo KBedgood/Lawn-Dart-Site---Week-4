@@ -192,12 +192,25 @@ nav {
     text-align: left;
     text-transform: uppercase; }
 
-.productContainer img {
-  max-height: 300px; }
+.productContainer {
+  text-align: left;
+  margin-bottom: 30px; }
+  .productContainer img {
+    max-height: 300px; }
+  .productContainer .productImageContainer img {
+    max-height: 50px;
+    padding-top: 10px; }
+  .productContainer h2 {
+    margin-top: 0px; }
 
-.productContainer .productImageContainer img {
-  max-height: 50px;
-  padding-top: 10px; }
+.productUsers {
+  background-color: #223FA1;
+  padding: 40px 40px 40px 40px; }
+  .productUsers p,
+  .productUsers h3 {
+    color: white; }
+  .productUsers img {
+    border-radius: 50%; }
 
 .companyTestimonals {
   padding: 0 30px 0 30px; }
@@ -215,9 +228,16 @@ nav {
   margin-top: 0; }
 
 #googleMap {
-  height: 250px;
+  height: 350px;
   margin: 35px auto 0;
   width: 100%; }
+
+footer.container {
+  margin-top: 0px; }
+  footer.container .socialIcons {
+    font-size: 2em; }
+    footer.container .socialIcons .fa {
+      padding: 0 5px 0 5px; }
 
 .navbar-header a {
   font-size: 33px;
