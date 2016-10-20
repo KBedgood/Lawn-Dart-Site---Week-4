@@ -1,9 +1,10 @@
 $(document).ready(function() {
 
     //Defining person id
-  
+
     $profilePicture = $(".profilePicture");
     $profileText = $(".profileText");
+    $companyContainer = $(".companyContainer");
 
 
 
@@ -56,8 +57,24 @@ $(document).ready(function() {
 
 });
 
-// Google Map
 
+$.ajax({
+    url: 'https://json-data.herokuapp.com/darts/companies',
+    dataType: 'json',
+    success: function(companies) {
+        companies.results.forEach(function(company) {
+            console.log(company);
+            $companyContainer.append(`
+              <div class="col-md-3">
+              <img src='${company.image_url}'>
+              </div>
+              `)
+        })
+    }
+});
+
+
+// Google Map
 var googleMap = document.getElementById("googleMap");
 
 function initMap() {
