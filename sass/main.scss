@@ -1,114 +1,109 @@
 @import "_typography.scss";
-
+@import "contactUs.scss";
 //Colors
 $darkBlue: #0B2647;
 $lightBlue: #223FA1;
 $lightRed: #A0261A;
 $darkRed: #602618;
+// //Header
+// .navbar-header {
+//     height: 90px;
+//     a {
+//         font-size: 2.5em;
+//     }
+//     a > img {
+//         max-height: 60px;
+//         color: black;
+//         display: block;
+//         float: left;
+//     }
+// }
 
-//Header
-.navbar-header {
-            height: 90px;
-            a {
-                        font-size: 2.5em;
-            }
-            a > img {
-                        max-height: 60px;
-                        color: black;
-                        display: block;
-                        float: left;
-            }
-}
+// .logo {
+//     font-size: 48px;
+//     color: #A0261A;
+//     font-weight: 700;
+//     padding-top: 30px;
+// }
 
-.logo {
-      font-size: 48px;
-      color: #A0261A;
-      font-weight: 700;
-      padding-top: 30px;
-}
-
-
-.navbar {
-            background: rgba(255, 255, 255, 0.87);
-            border:none .navbar-toggle {
-                        color: black;
-            }
-}
+// .navbar {
+//     background: rgba(255, 255, 255, 0.87);
+//     border:none .navbar-toggle {
+//         color: black;
+//     }
+// }
 
 .heroImage {
-            height: 450px;
-            width: 100%;
-            background: url('/img/heroImage.jpg') no-repeat center;
-            background-size: cover;
-            .slogan h1 {
-                        color: white;
-                        text-align: left;
-                        text-transform: uppercase;
-            }
+    height: 450px;
+    width: 100%;
+    background: url('/img/heroImage.jpg') no-repeat center;
+    background-size: cover;
+    .slogan h1 {
+        color: white;
+        text-align: left;
+        text-transform: uppercase;
+    }
 }
 
 //Product Container
 .productContainer {
-            img {
-                        max-height: 300px;
-            }
-            .productImageContainer img {
-                        max-height: 50px;
-                        padding-top: 10px;
-            }
+    img {
+        max-height: 300px;
+    }
+    .productImageContainer img {
+        max-height: 50px;
+        padding-top: 10px;
+    }
 }
-
 
 //Testamonials
 .companyTestimonals {
-padding: 0 30px 0 30px;
+    padding: 0 30px 0 30px;
 }
 
 //SECTION : Map
 .map {
-            margin-top: 60px;
-            text-align: center;
-            color: $lightBlue
+    margin-top: 60px;
+    text-align: center;
+    color: $lightBlue
 }
 
 .sectionHeader {
-            font-size: 42px;
-            font-weight: 700px;
+    font-size: 42px;
+    font-weight: 700px;
 }
 
 .map h3 {
-            margin-top: 0;
+    margin-top: 0;
 }
 
 #googleMap {
-            height: 250px;
-            margin: 35px auto 0;
-            width: 100%;
+    height: 250px;
+    margin: 35px auto 0;
+    width: 100%;
 }
 
-
 // Contact
-
 .navbar-header a {
-      font-size: 33px;
-      text-align: left;
+    font-size: 33px;
+    text-align: left;
 }
 
 #bodyContact {
-      background: $lightBlue;
+    background: $lightBlue;
 }
 
 form {
-line-height: 23px;
+    line-height: 23px;
 }
 
 label {
-      color: white;
-      display: block;
+    color: white;
+    display: block;
 }
 
 input {
-      color: $lightBlue;
-      width: 500px;
-      margin-bottom: 30px;
+    color: $lightBlue;
+    width: 500px;
+    margin-bottom: 30px;
 }

@@ -4,91 +4,90 @@ $darkBlue: #0B2647;
 $lightBlue: #223FA1;
 $lightRed: #A0261A;
 $darkRed: #602618;
-body {
-            //background-color: $lightBlue;
-}
+// body {
+//     //background-color: $lightBlue;
+// }
 
 .content {
-            background-color: $lightBlue;
+    background-color: $lightBlue;
 }
 
 //NAVIGATION
 nav {
-            top: 0;
-            vertical-align: top;
-            position: fixed;
-            width: 100%;
-            background-color: rgba(255, 255, 255, 1);
-            z-index: 1;
-            img {
-                        margin-left: 70px;
-                        margin-top: 6px;
-                        max-height: 77px;
+    top: 0;
+    vertical-align: top;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 1);
+    z-index: 1;
+    img {
+        margin-left: 70px;
+        margin-top: 6px;
+        max-height: 77px;
+    }
+    ul {
+        list-style: none;
+        margin: 0 auto;
+        padding: 0;
+        float: right;
+        margin-right: 30px;
+        height: 90px;
+        li {
+            display: inline-block;
+            margin-right: 0px;
+            height: 100%;
+            a {
+                float: right;
+                color: $lightRed;
+                font-size: 14px;
+                font-weight: 700;
+                text-align: center;
+                text-transform: uppercase;
+                text-decoration: none;
+                padding: 35px;
+                &:hover {
+                    text-decoration: none;
+                    color: white;
+                    background-color: $lightRed;
+                }
             }
-            ul {
-                        list-style: none;
-                        margin: 0 auto;
-                        padding: 0;
-                        float: right;
-                        margin-right: 30px;
-                        height: 90px;
-                        li {
-                                    display: inline-block;
-                                    margin-right: 0px;
-                                    height: 100%;
-                                    a {
-                                                float: right;
-                                                color: $lightRed;
-                                                font-size: 14px;
-                                                font-weight: 700;
-                                                text-align: center;
-                                                text-transform: uppercase;
-                                                text-decoration: none;
-                                                padding: 35px;
-                                                &:hover {
-                                                            text-decoration: none;
-                                                            color: white;
-                                                            background-color: $lightRed;
-
-                                                }
-                                    }
-                        }
-            }
+        }
+    }
 }
 
 // BODY
 .container {
-            margin-top: 90px;
-            text-align: center;
-            .contactInfo {
-                        h3 {
-                                    color: white;
-                                    font-size: 24px;
-                                    font-weight: bold;
-                                    text-transform: uppercase;
-                        }
-                        .hearFrom {
-                                    font-size: 21px;
-                                    line-height: 18px;
-                                    color: white;
-                                    font-weight: 700;
-                        }
-            }
-            form {
-                        display: inline-block;
-                        width: 600px;
-                        line-height: 23px;
-                        margin-top: 33px;
-                        font-size: 12px;
-                        text-align: left;
-                        label {
-                                    color: white;
-                                    display: block;
-                        }
-                        input {
-                                    color: black;
-                                    margin-bottom: 30px;
-                                    width: 100%;
-                        }
-            }
+    margin-top: 90px;
+    text-align: center;
+    .contactInfo {
+        h3 {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .hearFrom {
+            font-size: 21px;
+            line-height: 18px;
+            color: white;
+            font-weight: 700;
+        }
+    }
+    form {
+        display: inline-block;
+        width: 600px;
+        line-height: 23px;
+        margin-top: 33px;
+        font-size: 12px;
+        text-align: left;
+        label {
+            color: white;
+            display: block;
+        }
+        input {
+            color: black;
+            margin-bottom: 30px;
+            width: 100%;
+        }
+    }
 }
