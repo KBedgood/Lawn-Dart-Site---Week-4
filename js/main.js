@@ -1,10 +1,13 @@
 $(document).ready(function() {
 
-
     //Defining person id
     $person1 = $("#person1");
     $person2 = $("#person2");
     $person3 = $("#person3");
+    $profile = $(".profile");
+
+
+
     // Random User Generator API
     // How to use
     // You can use AJAX to call the Random User Generator API and will receive a randomly 
@@ -14,42 +17,37 @@ $(document).ready(function() {
     // GENDER --> http://api.randomuser.me/?gender=female
     // MULTIPLE USERS --> http://api.randomuser.me/?results=5000
 
-    // $.ajax({
-    //     url: 'https://randomuser.me/api/',
-    //     dataType: 'json',
-    //     success: function(users) {
-
-    //     }
-    // });
-
+    $.ajax({
+        url: 'https://randomuser.me/api/?results=3',
+        dataType: 'json',
+        success: function(users) {
+            users.results.forEach(function(user) {
+                console.log(user.picture.medium);
+                $profile.append(` 
+            <div class="userName col-md-4">
+            <img src='${user.picture.medium}'>
+            </div
+                `)
+            });
+        }
+    });
 
     //Testamonials 
     $.ajax({
         url: 'https://json-data.herokuapp.com/darts/testimonials',
         dataType: 'json',
         success: function(testimonials) {
-            console.log(testimonials);
-            $person1.append(`
-           		<div class="userName col-md-4">
-           		<h3>${testimonials.results["0"].name}</h3>
-           		<p>${testimonials.results["0"].review}</p>
-				</div>
-           		`)
-            $person2.append(`
-           		<div class="userName col-md-4">
-           		<h3>${testimonials.results["1"].name}</h3>
-           		<p>${testimonials.results["1"].review}</p>
-				</div>
-           		`)
-            $person3.append(`
-           		<div class="userName col-md-4">
-           		<h3>${testimonials.results["2"].name}</h3>
-           		<p>${testimonials.results["2"].review}</p>
-				</div>
-           		`)
+            testimonials.results.forEach(function(testimonial) {
+                console.log(testimonial.name);
+                $profile.append(`
+              <div class="userName col-md-4">
+              <h3>${testimonial.name}</h3>
+              <p>${testimonial.name}</p>
+        </div>
+              `)
+            })
         }
     });
-
 
     //Product Info
     $.ajax({
@@ -63,15 +61,6 @@ $(document).ready(function() {
 
         }
     });
-
-
-
-
-
-
-
-
-
 
 });
 
