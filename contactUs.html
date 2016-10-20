@@ -13,43 +13,45 @@
 </head>
 
 <body>
-            <nav class="container-fluid">
+            <nav class="container-fluid ix">
                         <div class="row">
                                     <div class="col-md-5">
                                                 <img class="logo" src="img/logo_v2.svg" alt="">
-                                                <h3 class="logoType">YARD MISSILES</h3></a>
                                     </div>
-                                    <div class="col-md-7">
+                                    <div class="col-md-7 right">
                                                 <ul>
-                                                            <li><a href="comics.html">Shop</a></li>
-                                                            <li><a href="characters.html">About</a></li>
-                                                            <li><a href="contactUs.html">Contact Us</a></li>
+                                                            <li class="active"><a href="index.html">Home</a>
+                                                                        <li><a href="comics.html">Shop</a></li>
+                                                                        <li><a href="characters.html">About</a></li>
+                                                                        <li><a href="contactUs.html">Contact Us</a></li>
                                                 </ul>
                                     </div>
                         </div>
             </nav>
-            <section class="container">
-                        <form>
-                                    <div class="form">
-                                                <form>
-                                                <h3>Life is a contact sport... we'd love to hear from you!<h3>
-                                                            <label for="firstName">First Name</label>
-                                                            <input type="text" placeholder="First Name...">
-                                                            <label for="lastName">Last Name</label>
-                                                            <input type="text" placeholder="Last Name...">
-                                                            <label>eMail address</label>
-                                                            <input type="text" placeholder="first.last@gmail.com">
-                                                            <label>country</label>
-                                                            <select name="country">
-                                                                        <option value="United States">France</option>
-                                                                        <option value="Canada">Italy</option>
-                                                                        <option value="portugal">Portugal</option>
-                                                            </select>
+            <section class="content">
+                        <div class="container">
+                                    <div class="contactInfo">
+                                                <h3>Life is a contact sport...</h3>
+                                                <p class="hearFrom">We'd love to hear from you!</p>
                                     </div>
+                                    <form>
+                                                <label for="firstName">First Name</label>
+                                                <input type="text" placeholder="First Name...">
+                                                <label for="lastName">Last Name</label>
+                                                <input type="text" placeholder="Last Name...">
+                                                <label>eMail address</label>
+                                                <input type="text" placeholder="first.last@gmail.com">
+                                                <label>Are you reporting a product defect or injury?</label>
+                                                <select name="But Did You Die">
+                                                            <option value="Y">Yes</option>
+                                                            <option value="No">No</option>
+                                                            <option value="Legal">I have retained legal representation.</option>
+                                                </select>
                                     </form>
-                                    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-                                    <script type="text/javascript" src="/js/main.js"></script>
-                                    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDcUEbAgkUk04iNkzawnm6Mx74w-F-uVKQ&callback=initMap"></script>
+                        </div>
+                        <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+                        <script type="text/javascript" src="/js/main.js"></script>
+                        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDcUEbAgkUk04iNkzawnm6Mx74w-F-uVKQ&callback=initMap"></script>
 </body>
 
 </html>
