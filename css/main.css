@@ -61,6 +61,12 @@ p {
     display: block;
     float: left; }
 
+.logo {
+  font-size: 48px;
+  color: #A0261A;
+  font-weight: 700;
+  padding-top: 30px; }
+
 .navbar {
   background: rgba(255, 255, 255, 0.87); }
   .navbar border:none .navbar-toggle {
@@ -102,3 +108,22 @@ p {
   height: 250px;
   margin: 35px auto 0;
   width: 100%; }
+
+.navbar-header a {
+  font-size: 33px;
+  text-align: left; }
+
+#bodyContact {
+  background: #223FA1; }
+
+form {
+  line-height: 23px; }
+
+label {
+  color: white;
+  display: block; }
+
+input {
+  color: #223FA1;
+  width: 500px;
+  margin-bottom: 30px; }

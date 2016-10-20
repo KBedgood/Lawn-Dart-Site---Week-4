@@ -5,6 +5,7 @@ $darkBlue: #0B2647;
 $lightBlue: #223FA1;
 $lightRed: #A0261A;
 $darkRed: #602618;
+
 //Header
 .navbar-header {
             height: 90px;
@@ -18,6 +19,14 @@ $darkRed: #602618;
                         float: left;
             }
 }
+
+.logo {
+      font-size: 48px;
+      color: #A0261A;
+      font-weight: 700;
+      padding-top: 30px;
+}
+
 
 .navbar {
             background: rgba(255, 255, 255, 0.87);
@@ -49,6 +58,7 @@ $darkRed: #602618;
             }
 }
 
+
 //Testamonials
 .companyTestimonals {
 padding: 0 30px 0 30px;
@@ -74,4 +84,31 @@ padding: 0 30px 0 30px;
             height: 250px;
             margin: 35px auto 0;
             width: 100%;
+}
+
+
+// Contact
+
+.navbar-header a {
+      font-size: 33px;
+      text-align: left;
+}
+
+#bodyContact {
+      background: $lightBlue;
+}
+
+form {
+line-height: 23px;
+}
+
+label {
+      color: white;
+      display: block;
+}
+
+input {
+      color: $lightBlue;
+      width: 500px;
+      margin-bottom: 30px;
 }
