@@ -1,0 +1,70 @@
+@import "_typography.scss";
+//Colors
+$darkBlue: #0B2647;
+$lightBlue: #223FA1;
+$lightRed: #A0261A;
+$darkRed: #602618;
+//NAVIGATION
+body {
+            background-color: $lightBlue;
+}
+
+nav {
+            height: 90px;
+            background-color: white;
+            // opacity: .5;
+}
+
+img {
+            margin-left: 70px;
+            margin-top: -37px;
+            max-height: 77px;
+}
+
+.logoType {
+            color: black;
+            display: inline-block;
+            font-size: 38px;
+            font-weight: 600;
+            margin-top: 29px;
+}
+
+a {
+            color: $lightRed
+            font-size: 24px;
+            font-weight: 700;
+            text-align: center;
+            text-transform: uppercase;
+            text-decoration: none;
+
+            a hover {
+                  text-decoration: none;
+                  color: $darkRed;
+            }
+}
+
+// BODY
+#bodyContact {
+            background: $lightBlue;
+}
+
+form h3 {
+      color: white; !important
+}
+
+form {
+            line-height: 23px;
+            margin-top: 33px;
+            font-size: 12px;
+}
+
+label {
+            color: white;
+            display: block;
+}
+
+input {
+            color: black;
+            width: 500px;
+            margin-bottom: 30px;
+}
