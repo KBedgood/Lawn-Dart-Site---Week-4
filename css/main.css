@@ -134,7 +134,7 @@ nav {
         text-align: center;
         text-transform: uppercase;
         text-decoration: none;
-        padding: 35px; }
+        padding: 35px 15px; }
         nav ul li a:hover {
           text-decoration: none;
           color: white;
@@ -142,10 +142,9 @@ nav {
   nav .dartCart {
     float: right; }
     nav .dartCart img {
-      height: 60px;
-      margin-top: 15px;
-      margin-left: 0;
-      padding-left: 23px; }
+      height: 37px;
+      margin-top: 27px;
+      margin-left: 34px; }
 
 .container {
   margin-top: 90px;
@@ -190,10 +189,10 @@ nav {
   background-color: #DCDCDC; }
 
 .carousel {
-  width: 500px; }
+  width: 650px; }
 
 .productSlider {
-  margin-top: 329px; }
+  margin-top: 36px; }
 
 .productUsers {
   background-color: #223FA1;
@@ -208,6 +207,12 @@ nav {
 .container {
   color: white;
   text-align: left; }
+
+.lawnDartContainer {
+  padding-left: 160px; }
+  .lawnDartContainer p {
+    font-size: 16px;
+    line-height: 26px; }
 
 .companyTestimonals {
   padding: 0 30px 0 30px;
