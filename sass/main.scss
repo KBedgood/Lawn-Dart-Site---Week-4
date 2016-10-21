@@ -5,7 +5,6 @@ $darkBlue: #0B2647;
 $lightBlue: #223FA1;
 $lightRed: #A0261A;
 $darkRed: #602618;
-
 nav {
             background-color: #DCDCDC;
 }
@@ -38,15 +37,20 @@ nav {
 //                         margin-top: 0px;
 //             }
 // }
-
 .carousel {
-    width: 500px;
+            width: 500px;
+            // margin-top: 60px;
+}
+
+.productSlider {
+            // display: inline-block;
+            margin-top: 329px;
 }
 
 .productUsers {
             background-color: $lightBlue;
-            padding: 40px 40px 40px 40px;
-            float:left;
+            padding: 40px 40px 0px 40px;
+            float: left;
             p,
             h3 {
                         color: white;
@@ -56,30 +60,36 @@ nav {
             }
 }
 
+.container {
+            color: white;
+            text-align: left;
+}
+
 //Testamonials
 .companyTestimonals {
-
-    padding: 0 30px 0 30px;
-    margin-top:0px; 
-    img {
-      max-width: 100px;
-    }
+            padding: 0 30px 0 30px;
+            margin-top: 50px;
+            margin-bottom: 0;
+            img {
+                        max-width: 100px;
+            }
 }
 
 //SECTION : Map
 .map {
-            margin-top: 60px;
             text-align: center;
             color: $lightBlue
 }
 
 .sectionHeader {
+            color: white;
             font-size: 42px;
             font-weight: 700px;
 }
 
 .map h3 {
             margin-top: 0;
+            color: white;
 }
 
 #googleMap {
@@ -90,6 +100,7 @@ nav {
 
 /// Footer Styles 
 footer.container {
+            color: white;
             margin-top: 0px;
             .socialIcons {
                         font-size: 2em;

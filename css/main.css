@@ -150,18 +150,20 @@ nav {
 .container {
   margin-top: 90px;
   text-align: center; }
-  .container .contactInfo h3 {
-    color: white;
-    font-size: 24px;
-    font-weight: bold;
-    text-transform: uppercase; }
-  .container .contactInfo .hearFrom {
-    font-size: 21px;
-    line-height: 18px;
-    color: white;
-    font-weight: 700; }
+  .container .contactInfo {
+    text-align: center; }
+    .container .contactInfo h3 {
+      color: white;
+      font-size: 24px;
+      font-weight: bold;
+      text-transform: uppercase; }
+    .container .contactInfo .hearFrom {
+      font-size: 21px;
+      line-height: 18px;
+      color: white;
+      font-weight: 700; }
   .container form {
-    display: inline-block;
+    display: inline;
     width: 600px;
     line-height: 23px;
     margin-top: 33px;
@@ -172,6 +174,8 @@ nav {
       display: block; }
     .container form input {
       color: black;
+      background: #eeeeee;
+      padding-left: 10px;
       margin-bottom: 30px;
       width: 100%; }
   .container footer {
@@ -179,15 +183,21 @@ nav {
     margin-top: 33px;
     margin-bottom: 33px; }
 
+body {
+  background-color: #223FA1; }
+
 nav {
   background-color: #DCDCDC; }
 
 .carousel {
   width: 500px; }
 
+.productSlider {
+  margin-top: 329px; }
+
 .productUsers {
   background-color: #223FA1;
-  padding: 40px 40px 40px 40px;
+  padding: 40px 40px 0px 40px;
   float: left; }
   .productUsers p,
   .productUsers h3 {
@@ -195,23 +205,29 @@ nav {
   .productUsers img {
     border-radius: 50%; }
 
+.container {
+  color: white;
+  text-align: left; }
+
 .companyTestimonals {
   padding: 0 30px 0 30px;
-  margin-top: 0px; }
+  margin-top: 50px;
+  margin-bottom: 0; }
   .companyTestimonals img {
     max-width: 100px; }
 
 .map {
-  margin-top: 60px;
   text-align: center;
   color: #223FA1; }
 
 .sectionHeader {
+  color: white;
   font-size: 42px;
   font-weight: 700px; }
 
 .map h3 {
-  margin-top: 0; }
+  margin-top: 0;
+  color: white; }
 
 #googleMap {
   height: 350px;
@@ -219,6 +235,7 @@ nav {
   width: 100%; }
 
 footer.container {
+  color: white;
   margin-top: 0px; }
   footer.container .socialIcons {
     font-size: 2em; }

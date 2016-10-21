@@ -97,18 +97,20 @@ nav {
 .container {
   margin-top: 90px;
   text-align: center; }
-  .container .contactInfo h3 {
-    color: white;
-    font-size: 24px;
-    font-weight: bold;
-    text-transform: uppercase; }
-  .container .contactInfo .hearFrom {
-    font-size: 21px;
-    line-height: 18px;
-    color: white;
-    font-weight: 700; }
+  .container .contactInfo {
+    text-align: center; }
+    .container .contactInfo h3 {
+      color: white;
+      font-size: 24px;
+      font-weight: bold;
+      text-transform: uppercase; }
+    .container .contactInfo .hearFrom {
+      font-size: 21px;
+      line-height: 18px;
+      color: white;
+      font-weight: 700; }
   .container form {
-    display: inline-block;
+    display: inline;
     width: 600px;
     line-height: 23px;
     margin-top: 33px;
@@ -119,9 +121,14 @@ nav {
       display: block; }
     .container form input {
       color: black;
+      background: #eeeeee;
+      padding-left: 10px;
       margin-bottom: 30px;
       width: 100%; }
   .container footer {
     color: white;
     margin-top: 33px;
     margin-bottom: 33px; }
+
+body {
+  background-color: #223FA1; }
